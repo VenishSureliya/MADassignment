@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_height="wrap_content"
+
+        android:paddingHorizontal="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="12dp">
+
+        <LinearLayout
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:elevation="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/accountVector"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:src="@drawable/baseline_account_circle_24" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Venish Sureliya"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/cNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91 9723215199"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="venishsureliya@gmail.com"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Junagadh, Gujarat"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:gravity="right"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="58dp"
+                    style="?materialIconButtonFilledStyle"
+                    app:icon="@drawable/baseline_person_pin_circle_24"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                     adapter.notifyDataSetChanged()
                 }
             }
-            .setNegativeButton("Cancel", null)
+            .setNegativeButton("Cancel It", null)
 
             .create()
         dialog.show()

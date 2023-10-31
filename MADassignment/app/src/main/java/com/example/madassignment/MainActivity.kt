@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     private fun showAddTaskDialog() {
         val editText = EditText(this)
         val dialog = AlertDialog.Builder(this)
-            .setTitle("Add Task")
+            .setTitle("Add a new Task")
             .setView(editText)
             .setPositiveButton("Add") { _, _ ->
                 val description = editText.text.toString()
@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             .setNegativeButton("Cancel", null)
+
             .create()
         dialog.show()
     }
